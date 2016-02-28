@@ -1,0 +1,83 @@
+body{
+	background-attachment: fixed;
+	background-image: url(../../imgs/wall.jpg);
+	background-size: cover;
+}
+header{
+	height: 80px;
+	width: 900px;
+
+	z-index: 1;
+}
+header, main{
+	position: relative;
+
+	animation: down 4s;
+}
+header, table:nth-child(2){
+	margin: auto;
+}
+header img{
+	height: 100px;
+	width: 70px;
+
+	position: absolute;
+	top: -14px;
+}
+header img:nth-child(2){
+	left: 100px;
+}
+header img:nth-child(3){
+	right: 100px;
+}
+header div, footer, figure{
+	display: none;
+}
+main{
+	display: table;
+	background-color: #fff;
+	padding: 20px 50px;
+	box-shadow: -20px 20px 30px #000;
+	margin: 0 auto 50px auto;
+}
+
+table:nth-child(2){
+	width: 800px;
+
+	font-family: lobster, cursive;
+	white-space: nowrap;
+}
+caption{
+	font-size: 40px;
+}
+th, td{
+	height: 30px;
+	
+	font-size: 18px;
+}
+tfoot table{
+	width: 100%;
+}
+tfoot table th{
+	width: 20%;
+}
+tfoot th, tfoot td{
+	text-align: center;
+}
+tfoot th:first-child{
+	text-align: left;
+}
+
+a{
+	color: #000;
+	text-decoration: underline;
+}
+
+@keyframes down{
+	0%{
+		transform: translate(0, -1000px);
+	}
+	100%{
+		transform: translate(0, 0);
+	}
+}

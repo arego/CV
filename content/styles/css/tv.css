@@ -1,0 +1,122 @@
+body{
+    background-color: #80a4d5;
+}
+header, footer span, footer div:nth-child(2), figure{
+    display: none;
+}
+main{
+    font-family: niconne, sans-serif;
+
+    display: table;
+    background-image: url(../../imgs/tvscreen.png);
+    background-repeat: no-repeat;
+    padding: 20px 50px 100px 50px;
+    margin: 20px auto 0 auto;
+}
+main, footer{
+    background-size: 100% 100%;
+}
+
+figure{
+    height: 540px;
+    width: 230px;
+
+    position: fixed;
+    z-index: -1;
+    top: 100px;
+    right: 0;
+}
+
+table{
+    width: 800px;
+}
+table:nth-child(2){
+    height: 410px;
+
+    margin: auto;
+}
+table:nth-child(2) {
+    opacity: 0;
+    
+    transition: 2s;
+}
+caption{
+    font-size: 50px;
+    letter-spacing: 10px;
+
+    margin-bottom: 10px;
+}
+main:hover table, main:hover caption{
+    opacity: 1;
+}
+th, td{
+    font-size: 20px;
+
+    background-color: rgba(250, 250, 250, .7);
+    padding: 2px;
+    border-radius: 10px;
+}
+tfoot table{
+    height: 120px;
+}
+tfoot th{
+    width: 20%;
+
+    padding: 0 15px;
+}
+tfoot td, footer div{
+    text-align: center;
+}
+tfoot th:first-child{
+    text-align: right;
+}
+.tfoot{
+    background-color: inherit;
+}
+footer{
+    height: 320px;
+
+    position: absolute;
+    left: 50%;
+
+    background-image: url(../../imgs/controller.png);
+
+    margin-top: -225px;
+
+    transform: rotate3d(-14, 7, 9, 90deg);
+    transition: 3s;
+}
+footer, footer div{
+    width: 150px;
+}
+footer div{
+    display: inline-block;
+    margin: 230px auto 0 auto;
+}
+footer:hover{
+    transform: translate(-70px, -120px) rotate3d(0, 0, 0, 0deg);
+}
+a{
+    color: #000;
+    text-decoration: underline;
+}
+button{
+    display: inline;
+    background-color: #4a4c58;
+}
+button:nth-child(2){
+    margin: 0 5px;
+}
+button img{
+    width: 25px;
+}
+
+@keyframes speaker{
+    0%, 100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+}

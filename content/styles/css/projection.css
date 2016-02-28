@@ -1,0 +1,108 @@
+body{
+	background-attachment: fixed;
+	background-image: url(../../imgs/ship.jpg);
+	background-size: cover;
+}
+header, footer span, footer div:nth-child(2) a:nth-child(-n+3), footer div:nth-child(4),
+figure img:nth-child(-n+5), figure img:nth-child(n+8){
+	display: none;
+}
+main{
+	position: relative;
+
+    display: table;
+	background-image: url(../../imgs/main.png);
+	background-size: 100% 100%;
+    padding: 20px 240px 50px 50px;
+	margin: 20px auto 0 auto;
+
+    cursor: url(../../imgs/anchor.gif), auto;
+}
+
+figure{
+	z-index: 1;
+    top: 70px;
+    right: -150px;
+}
+figure, figure img:nth-child(7){
+	position: absolute;
+}
+figure img:nth-child(6){
+	height: 300px;
+}
+figure img:nth-child(6), caption {
+	width: 300px;
+}
+figure img:nth-child(7){
+	height: 164px;
+	width: 45px;
+
+    top: 65px;
+    right: 126px;
+
+	transition: transform 5s;
+}
+figure:hover img:nth-child(7){
+	transform: rotate(135deg);
+}
+
+caption{
+	color: black;
+	font-size: 30px;
+}
+caption, th, td{
+	font-family: unifrakturcook, cursive;
+}
+th, td{
+	font-size: 18px;
+}
+table:nth-child(2) tbody th{
+	width: 200px;
+	
+	text-align: right;
+}
+table:nth-child(2) tbody tr th:first-child{
+	width: 35px;
+}
+table:nth-child(2) tbody td, tfoot table td{
+	height: 30px;
+	
+}
+tfoot table{
+	width: 100%;
+}
+tfoot th{
+	width: 20%;
+	
+	text-align: left;
+}
+
+footer{
+    width: 950px;
+}
+footer, caption{
+    margin: auto;
+}
+footer, caption, footer div img{
+	height: 50px;
+}
+footer div{
+	float: right;
+}
+footer span{
+	margin-left: 50px;
+}
+footer div img{
+	width: 50px;
+
+	margin-right: 10px;
+	
+	transition: transform 2s;
+}
+footer div img:hover{
+	transform: scale(1.5);
+}
+
+a, th, td{
+	color: #000;
+}

@@ -1,0 +1,57 @@
+body{
+	background-attachment: fixed;
+	background-image: url(../../imgs/bgprint.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header, footer, figure{
+	display: none;
+}
+main{
+	display: table;
+	padding: 20px 40px;
+	background-color: rgba(176, 182, 119, .9);
+	border-radius: 15px;
+	box-shadow: inset 1px 1px 60px 1px #000;
+	margin: 40px auto;
+
+    cursor: url(../../imgs/brush.gif), auto;
+}
+
+caption{
+	font-size: 35px;
+}
+caption, th{
+    color: #1a3f1b;
+	font-family: chewy, cursive;
+}
+th{
+	text-align: right;
+}
+th, tfoot table td{
+	padding: 0 10px;
+}
+th, td{
+	font-size: 20px;
+}
+td{
+	color: #5a0321;
+	font-family: lobster two, cursive;
+}
+td, tfoot table th{
+	text-align: left;
+}
+tfoot table{
+	width: 100%;
+}
+tfoot table th{
+	width: 20%;
+}
+tfoot table th:nth-child(n+2), tfoot table td{
+	text-align: center;
+}
+
+a{
+	color: #5a0321;
+	text-decoration: underline;
+}

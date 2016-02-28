@@ -1,0 +1,65 @@
+body{
+	font-family: serif;
+	font-weight: bold;
+	text-align: left;
+
+	background-image: url(../../imgs/auralbg.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	font-family: special elite, cursive;
+}
+header, footer, figure, caption{
+	display: none;
+}
+main{
+	display: table;
+	background-image: url(../../imgs/auralmain.png);
+	background-size: 100% 100%;
+	padding: 20px 40px 160px 40px;
+	margin: 30px auto 0 auto;
+}
+
+table:nth-child(2){
+	width: 600px;
+
+	white-space: nowrap;
+
+	margin: auto;
+}
+td{
+	padding-left: 10px;
+}
+td, table:nth-child(2) th, tfoot th, tfoot td{
+	font-size: 16px;
+}
+table:nth-child(2) th{
+	height: 30px;
+
+    text-shadow: 1px 1px 25px #000;
+
+	padding: 0 10px;
+}
+table:nth-child(2) th:first-child{
+	width: 20px;
+}
+tbody tr:nth-child(5) th:nth-child(4){
+	width: 160px;
+}
+tfoot{
+	font-style: italic;
+}
+tfoot table{
+	width: 100%;
+}
+tfoot th, tfoot td{
+	width: 20%;
+}
+
+a{
+	color: #fffbe7;
+}
+main:hover a{
+	text-decoration: underline;
+}

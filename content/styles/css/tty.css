@@ -1,0 +1,184 @@
+body{
+	background-image: url(../../imgs/speechbg.jpg);
+}
+header{
+	z-index: 1;
+}
+
+header, header div img, tfoot table, footer, footer span:nth-child(3) img{
+    width: 100%;
+}
+header, header div img{
+	top: 0;
+}
+header, footer{
+	position: fixed;
+}
+
+header > div, table:nth-child(2), footer span:nth-child(3), footer span:nth-child(3) img{
+	margin: auto;
+}
+header > div, footer span:nth-child(3){
+    height: 40px;
+	width: 70%;
+    min-width: 310px;
+}
+
+header div img{
+    z-index: -1;
+
+	border-radius: 0 0 30px 30px;
+}
+header div img, figure, figure img, footer span a{
+	position: absolute;
+}
+header div img, footer span:nth-child(3) img{
+    height: 100%;
+
+	background-repeat: repeat-x;
+}
+
+header div div{
+    margin: 5px 10% 0 0;
+}
+header div div, footer span a, button{
+    float: right;
+}
+header img:nth-child(n+2), figure img:nth-child(-n+3), figure img:nth-child(n+6),
+footer span:first-child, footer div{
+	display: none;
+}
+
+input{
+	width: 200px;
+
+	padding: 3px 4px;
+	border-radius: 8px 0 0 8px;
+    box-sizing: border-box;
+}
+input, button{
+	outline: none;
+
+	border: 1px solid #a58663;
+}
+input, button, table:nth-child(2) tbody td{
+	font-size: 15px;
+}
+button{
+	background: -webkit-linear-gradient(top, #fff , #8c7d63);
+    background: -moz-linear-gradient(top, #fff , #8c7d63);
+    background: -ms-linear-gradient(top, #fff , #8c7d63);
+	padding: 3px 10px;
+	border-radius: 0 8px 8px 0;
+}
+button, footer span a{
+	color: #fff;
+}
+
+main{
+	background-color: #fff;
+	padding: 40px 60px;
+	box-shadow: 5px 10px 5pc #000;
+	margin: 100px auto;
+}
+main, header > div, footer span:nth-child(3){
+    position: relative;
+}
+main, header div div{
+    display: table;
+}
+
+figure{
+    top: 220px;
+    right: 90px;
+}
+figure img:nth-child(4){
+	transition: 2s;
+}
+figure:hover img:nth-child(4){
+	transform: rotate(360deg);
+}
+
+table, th, td{
+    border: 1px solid #000;
+}
+table:nth-child(2){
+	white-space: nowrap;
+}
+caption{
+	color: #8c7d63;
+	font-size: 30px;
+
+	margin-bottom: 10px;
+}
+tfoot td, caption{
+	font-style: italic;
+}
+caption, table:nth-child(2) th, footer span a, table:nth-child(2) tbody tr:nth-child(1) td:nth-child(3), table:nth-child(2) tbody tr:nth-child(3) td:nth-child(3),
+table:nth-child(2) tbody tr:nth-child(4) td:nth-child(3), table:nth-child(2) tbody tr:nth-child(6) td:nth-child(3){
+	font-family: dancing script, cursive;
+}
+th{
+	background-color: #948a6b;
+}
+th, td{
+    height: 31px;
+}
+td {
+	background-color: #efdfce;
+}
+table:nth-child(2) th, table:nth-child(2) tbody tr:nth-child(1) td:nth-child(3), table:nth-child(2) tbody tr:nth-child(3) td:nth-child(3),
+table:nth-child(2) tbody tr:nth-child(4) td:nth-child(3), table:nth-child(2) tbody tr:nth-child(6) td:nth-child(3) {
+    font-size: 17px;
+}
+table:nth-child(2) tbody th:first-child{
+	width: 30px;
+}
+table:nth-child(2) tbody th:nth-child(2){
+	width: 150px;
+
+	text-align: left;
+
+	padding-left: 10px;
+}
+table:nth-child(2) tbody td{
+	font-family: great vibes, cursive;
+
+    padding: 0 20px;
+}
+table:nth-child(2) tbody tr:nth-child(1) td:nth-child(3), table:nth-child(2) tbody tr:nth-child(3) td:nth-child(3),
+table:nth-child(2) tbody tr:nth-child(4) td:nth-child(3), table:nth-child(2) tbody tr:nth-child(6) td:nth-child(3){
+	font-weight: bold;
+}
+tfoot td{
+	padding-left: 5px;
+}
+tfoot td, tfoot th{
+    width: 135px;
+}
+tfoot th{
+	text-align: center;
+}
+.tfoot{
+	padding: 8px;
+}
+footer{
+	bottom: 0;
+}
+footer span:nth-child(3){
+	display: block;
+}
+footer span:nth-child(3) img{
+	border-radius: 30px 30px 0 0;
+}
+
+footer span a{
+    top: 10px;
+    left: 60px;
+}
+tr:nth-child(6) a{
+	text-decoration: underline;
+}
+tbody a{
+	color: #000;
+}

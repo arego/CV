@@ -1,0 +1,72 @@
+header, footer, figure img:nth-child(-n+9){
+	display: none;
+}
+main{
+	position: relative;
+
+	display: table;
+	background: -webkit-linear-gradient(left top, #c1cdfc, #fff);
+	background: -moz-linear-gradient(left top, #c1cdfc, #fff);
+	background: -ms-linear-gradient(left top, #c1cdfc, #fff);
+	padding: 80px 30px;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px #000;
+	margin: 50px auto;
+
+    cursor: url(../../imgs/bird.gif), auto;
+}
+
+figure{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+figure img{
+	width: 200px;
+}
+
+table:nth-child(2){
+	white-space: nowrap;
+}
+caption{
+	font-size: 35px;
+
+	margin-bottom: 60px;
+}
+caption, th{
+	color: #200c67;
+	font-family: leckerli one, cursive;
+}
+th{
+	text-align: right;
+	line-height: 30px;
+}
+th, td{
+	font-size: 15px;
+}
+th, tfoot table td{
+	padding: 0 10px;
+}
+td{
+	font-family: petit formal script, cursive;
+}
+td, tfoot table th{
+    text-align: left;
+}
+tfoot td table{
+	width: 100%;
+}
+tfoot table th{
+	width: 20%;
+}
+tfoot table tr:first-child th{
+	line-height: 70px;
+}
+tfoot table th:nth-child(n+2), tfoot table td{
+	text-align: center;
+}
+
+a{
+	color: #000;
+	text-decoration: underline;
+}

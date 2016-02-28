@@ -1,0 +1,160 @@
+body{
+	background-image: url(../../imgs/circus.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+header, footer span, footer div a, footer div:nth-child(4), figure img{
+	display: none;
+}
+main{
+	background-color: #fff;
+	padding-bottom: 80px;
+	border-radius: 10px;
+	margin: 30px auto 0 auto;
+
+    cursor: url(../../imgs/knife.gif), auto;
+}
+main, footer{
+	width: 900px;
+
+    display: table;
+}
+main, footer div{
+	position: relative;
+}
+main, footer div div:hover{
+	opacity: .7;
+}
+
+figure{  
+	height: 254px;
+	width: 210px;
+
+	top: 80px;
+	left: 690px;
+}
+figure img:nth-child(9){
+	visibility: hidden;
+}
+figure, figure img, .fb a:nth-child(2) img, .in a:nth-child(2) img, .tt a:nth-child(2) img{
+	position: absolute;
+}
+figure img:nth-child(8), figure img:nth-child(9){
+	display: inline-block;
+}
+main:hover img:nth-child(8){
+	animation: move1 5s infinite;
+}
+main:hover img:nth-child(9){
+	animation: move2 5s infinite;
+}
+
+table{
+	width: 800px;
+}
+table, a{
+	color: #ff0000;
+}
+table, th{
+	font-family: jolly lodger, sans-serif;
+}
+table, footer{
+	margin: auto;
+}
+caption{
+	font-size: 40px;
+}
+th, td{
+	font-size: 20px;
+}
+tfoot{
+	transform: translate(0, 50px);
+}
+tfoot td th, tfoot td td{
+	width: 20%;
+
+	text-align: center;
+}
+
+footer{
+    height: 105px;
+}
+footer div{
+	width: 400px;
+
+	float: right;
+}
+footer div div a{
+	display: inline;
+}
+footer a img{
+	height: 100px;
+}
+footer a img, .in{
+	width: 100px;
+}
+footer a:nth-child(8) img, footer a:nth-child(9) img{
+	padding-left: 40px;
+}
+
+.fb, .in, .tt{
+	float: left;
+}
+.fb, .tt{
+    width: 104px;
+}
+.in, .tt{
+	margin-left: 40px;
+}
+.fb a:nth-child(2) img, .in a:nth-child(2) img, .tt a:nth-child(2) img{
+	top: 0;
+	left: 0;
+
+	animation: light 2s infinite;
+}
+
+main:hover a{
+    text-decoration: underline;
+}
+
+@keyframes light{
+	0%{
+		opacity: 1;
+	}
+	30%{
+		opacity: 0;
+	}
+	70%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes move1{
+	50%{
+		visibility: hidden;
+        
+		transform: translate(-700px, 0);
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+
+@keyframes move2{
+	0%{
+		visibility: hidden;
+
+		transform: translate(0, 0);
+	}
+	50%{
+		visibility: hidden;
+
+		transform: translate(-700px, 0);
+	}
+	100%{
+		visibility: visible;
+	}
+}

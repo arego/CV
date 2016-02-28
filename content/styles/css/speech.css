@@ -1,0 +1,77 @@
+body{
+	font-family: righteous, cursive;
+
+	background-color: #5a3852;
+}
+header, img:nth-child(1), figure img:nth-child(n+3), footer{
+	display: none;
+}
+main{
+	width: 900px;
+
+    display: table;
+	background-color: #f7eff7;
+	padding: 27px 0 50px 0;
+	border-radius: 20px;
+	margin: 25px auto 50px auto;
+}
+main, table:nth-child(2){
+    position: relative;
+}
+
+figure{
+	position: absolute;
+	top: 22px;
+	left: 31px;
+}
+img{
+	width: 95px;
+
+	margin: -27px -34px;
+}
+
+table:nth-child(2){
+	height: 450px;
+	width: 810px;
+
+	margin: auto;
+}
+caption{
+	font-size: 30px;
+
+	margin: 5px 5px 30px 5px;
+}
+caption, th, a{
+	color: #5a3852;
+}
+caption, tfoot td, tfoot th:nth-child(n+2){
+	text-align: center;
+}
+th{
+	text-align: right;
+
+	padding: 5px 3px;
+}
+th, td{
+	font-size: 15px;
+	white-space: nowrap;
+}
+td{
+	color: #a58a9c;
+
+	padding-left: 10px;
+}
+tbody tr:nth-child(5) th:nth-child(4){
+	width: 85px;
+}
+tfoot table{
+	width: 100%;
+
+	border: 3px dotted #5a3852;
+}
+tfoot th{
+	width: 118px;
+}
+tfoot th:nth-child(n+2){
+	padding: 0 10px;
+}
